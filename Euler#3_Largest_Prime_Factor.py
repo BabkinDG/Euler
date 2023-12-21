@@ -1,10 +1,10 @@
 #Наибольший простой множитель числа
 number = 600851475143
-n = 1
+factor = 1
 
-while n < number:
-    n += 1
-    if (number % n) == 0:
-        number //= n
+while factor < number:
+    factor += 1
+    if (number % factor) == 0:
+        number //= factor
 
-print('Наибольшим простым множителем числа 600851475143 является ' + str(n))
+print('Наибольшим простым множителем числа 600851475143 является ' + str(factor))
