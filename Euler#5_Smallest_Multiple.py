@@ -5,8 +5,8 @@ answer = False
 
 while answer == False:
     number += 20
-    for factor in range(1, 21):
-         if number % factor == 0:
+    for divider in range(1, 21):
+         if number % divider == 0:
             int_div += 1
             if int_div == 20:
                 answer = True
