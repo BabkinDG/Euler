@@ -11,4 +11,4 @@ for i1 in range(100, 1000):
             if hn1 == hn2:
                 Polindroms.append(mult_res)
 
-print('Число ' + str(max(Polindroms)) + ' является самым большим полиндромом')
+print('Число ' + str(max(Polindroms)) + ' является самым большим полиндромом, полученного умножением двух трехзначных чисел')
