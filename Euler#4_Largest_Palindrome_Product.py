@@ -1,14 +1,11 @@
 #Нахождение самого большого палиндрома, полученного умножением двух трехзначных чисел
-Polindroms = []
+polindroms = []
 
 for i1 in range(100, 1000):
     for i2 in range(100, 1000):
         mult_res = i1 * i2
-        Mult_res = str(mult_res)
-        if len(Mult_res) % 2 == 0:
-            hn1 = Mult_res[0:3]
-            hn2 = ''.join(reversed(Mult_res[3:6]))
-            if hn1 == hn2:
-                Polindroms.append(mult_res)
+        if str(mult_res)[0:3] == ''.join(reversed(str(mult_res)[3:6])):
+            polindroms.append(mult_res)
 
-print('Число ' + str(max(Polindroms)) + ' является самым большим полиндромом, полученного умножением двух трехзначных чисел')
+max_pol = max(polindroms)
+print(f'Число {max_pol} является самым большим полиндромом, полученного умножением двух трехзначных чисел')
